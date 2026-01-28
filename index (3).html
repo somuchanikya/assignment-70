@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Feedback Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="feedback-container">
+    <h2>Feedback Form</h2>
+    <p>We’d love to hear your thoughts!</p>
+
+    <form id="feedbackForm" action="#" method="post">
+
+        <!-- Name -->
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <!-- Email -->
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Rating -->
+        <label>Rating</label>
+        <div class="rating-group">
+            <label><input type="radio" name="rating" value="5"> 5</label>
+            <label><input type="radio" name="rating" value="4"> 4</label>
+            <label><input type="radio" name="rating" value="3"> 3</label>
+            <label><input type="radio" name="rating" value="2"> 2</label>
+            <label><input type="radio" name="rating" value="1"> 1</label>
+        </div>
+
+        <!-- Comments -->
+        <label for="comments">Comments</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+
+        <button type="submit">Submit Feedback</button>
+    </form>
+</div>
+
+</body>
+</html>
